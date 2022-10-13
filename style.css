@@ -1,0 +1,197 @@
+body {
+  background-color: #fff9fe;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+/* Navbar */
+
+nav li {
+  list-style-type: none;
+}
+
+.menu {
+  background-color: #fffcf9;
+  margin-bottom: 0px;
+  height: 4em;
+  padding-right: 10em;
+  padding-top: 1px;
+  text-align: center;
+}
+
+.menuBar {
+  padding: 1em;
+  width: auto;
+  height: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu .navMenu {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fb8b24;
+  width: 100%;
+  max-width: 1260px;
+}
+
+ul {
+  height: 2em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navMenu {
+  width: 100%;
+  max-width: 1260px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 5em;
+  margin: auto;
+}
+
+/* Animation Cameras */
+
+.allCamera {
+  width: 400px;
+  height: 250px;
+  margin: 2em 0em 0em 4em;
+}
+
+.blocCamera {
+  position: relative;
+  margin: 50px auto;
+  width: 400px;
+  height: 250px;
+  border-radius: 30px;
+  background-color: #222222; /*Couleur de l'appareil photo*/
+}
+.flashCamera {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f4fefe;
+  animation: animFlash 0.5s ease-out 0s infinite;
+}
+@keyframes animFlash {
+  75% {
+    background-color: red;
+  }
+}
+.clicCamera {
+  position: absolute;
+  left: 320px;
+  bottom: 180px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: midnightblue;
+  box-shadow: 2px 2px 2px 2px black;
+  outline: none;
+  z-index: 3;
+  cursor: pointer;
+  background-image: radial-gradient(
+    at center,
+    #838383 0%,
+    #838383 8%,
+    #161616 4%,
+    #161616 15%,
+    #222222 15%,
+    #222222 25%,
+    #333444 55%,
+    #111f23 70%,
+    #e4ecf3 60%,
+    #111111 40%,
+    #111111 55%,
+    #000000 55%,
+    #222444 750%
+  );
+}
+.clicCamera:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 2px 2px black;
+  background-image: radial-gradient(
+    at center,
+    #838383 0%,
+    #838383 8%,
+    #161616 4%,
+    #161616 15%,
+    #222222 15%,
+    #222222 25%,
+    #333444 55%,
+    #111f23 70%,
+    #e4ecf3 60%,
+    #111111 40%,
+    #111111 55%,
+    #000000 55%,
+    #222444 750%,
+    #e4ecf3 1000%
+  );
+}
+#sortiePolaroid {
+  position: absolute;
+  right: 75px;
+  bottom: 30px;
+  width: 260px;
+  height: 20px;
+  background-image: linear-gradient(
+    rgb(43, 45, 56) 25%,
+    #494949 10%,
+    #494949 50%,
+    #494949 15%,
+    rgb(43, 45, 56) 25%
+  );
+  z-index: 1;
+}
+
+.colorCamera {
+  width: 40px;
+  height: 75px;
+  position: absolute;
+  bottom: 175px;
+  left: 185px;
+  background: linear-gradient(
+    to right,
+    red 15%,
+    orange 35%,
+    yellow 50%,
+    rgb(93, 179, 93) 70%,
+    blue 85%
+  );
+}
+
+.mesures {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: radial-gradient(
+    at center,
+    #838383 0%,
+    #838383 4%,
+    #161616 4%,
+    #161616 15%,
+    #222222 15%,
+    #222222 25%,
+    #3c3c3c 25%,
+    #3c3c3c 40%,
+    #111111 40%,
+    #111111 55%,
+    #b44b37 55%,
+    #b44b37 50%
+  );
+  position: absolute;
+  top: 60px;
+  left: 145px;
+  z-index: 0;
+}
